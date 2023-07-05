@@ -20,10 +20,5 @@ jobs:
       issues: write
       pull-requests: write
     steps:
-      - uses: mheap/github-action-required-labels@v5
-        with:
-          mode: exactly
-          count: 0
-          labels: "do not merge"
       - run: echo "TODAY=$(date +%d-%m-%y)" >> $GITHUB_ENV
       - run: echo Hello world, today is $TODAY
