@@ -25,5 +25,6 @@ jobs:
           mode: exactly
           count: 0
           labels: "do not merge"
+      - run: jest
       - run: echo "TODAY=$(date +%d-%m-%y)" >> $GITHUB_ENV
       - run: echo Hello world, today is $TODAY
