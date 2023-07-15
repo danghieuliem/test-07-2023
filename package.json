@@ -2,7 +2,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "node ./src/main.js",
-		"test": "jest"
+		"test": "CI=true react-scripts test --env=jsdom"
 	},
 	"dependencies": {
 		"jest": "^29.6.1"
