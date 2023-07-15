@@ -1,6 +1,6 @@
 name: coverage
 on:
-  push:
+  pull_request_target:
     branches: [main]
   pull_request:
     types: [opened, reopened, synchronize, labeled, unlabeled]
